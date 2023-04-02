@@ -1,0 +1,58 @@
+@{
+    ViewData["Title"] = "Contatos";
+}
+<div class="text-center">
+    <h1>Listagem de contatos</h1>
+    <a class="btn btn-outline-primary" asp-controller="Contato" asp-action="Criar">Adicionar novo contato</a>
+    <br><br>
+   
+    <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Email</th>
+        <th scope="col">Celular</th>
+        <th scope="col">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Mark@zipmail.com</td>
+        <td>61983360091</td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <a role="button" class="btn btn-outline-danger">Apagar</a>
+                <a role="button" class="btn btn-outline-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+            </div>
+        </td>
+        </tr>
+        <tr>
+        <th scope="row">2</th>
+        <td>Leo</td>
+        <td>leodapraamigo@gmail.com</td>
+        <td>6983360024</td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+ <a role="button" class="btn btn-outline-danger">Apagar</a>
+                <a role="button" class="btn btn-outline-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+            </div>
+        </td>
+        </tr>
+        <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>larryLGBT@zipmail.com</td>
+        <td>249322123</td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+ <a role="button" class="btn btn-outline-danger">Apagar</a>
+                <a role="button" class="btn btn-outline-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+            </div>
+        </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
