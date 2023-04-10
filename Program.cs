@@ -1,7 +1,9 @@
-var builder = WebApplication.CreateBuilder(args);
+using form_scrum.Data;
 
+var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddEntityFrameworkMySql().AddDbContext<dbContext>(); 
 
 var app = builder.Build();
 
